@@ -1,0 +1,16 @@
+RewriteEngine On
+
+RewriteRule ^profil$ profil.php [L]
+RewriteRule ^kesif$ index.php?l=kesif [L]
+RewriteRule ^Referanslar$ referanslar.php [L]
+RewriteRule ^kurumsal/iletisim$ iletisim.php [L]
+RewriteRule ^kurumsal/iletisim/gonder$ iletisim.php?l=gonder [L]
+RewriteRule ^servis-noktalari$ servisnokta.php [L]
+
+RewriteRule ^kurumsal/([a-zA-Z0-9_-]+)$ kurumsal.php?sef=$1 [L]
+
+RewriteRule ^mesaj/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ include/mesaj.php?tur=$1&id=$2 [L]
+RewriteRule ^kategori/([a-zA-Z0-9_-]+)$ urunler.php?sef=$1 [L]
+RewriteRule ^kategori/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ urunler2.php?ustsef=$1&sef=$2 [L]
+RewriteRule ^urun$ urunler.php [L]
+RewriteRule ^urunler/([a-zA-Z0-9_-]+)$ urun.php?sef=$1 [L]

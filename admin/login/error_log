@@ -1,0 +1,1 @@
+[18-Feb-2016 10:07:30 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/erkankarabag/public_html/deneme/admin/login/ayar.php:20) in /home/erkankarabag/public_html/deneme/admin/login/login.php on line 16
